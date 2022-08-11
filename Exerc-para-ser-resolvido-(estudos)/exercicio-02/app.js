@@ -7,7 +7,7 @@
 - Modifique o title para "Exercício 02";
 - E linke este arquivo, app.js, antes do fechamento da tag body.
 */
-
+ 
 /*
 02 - Inicie o seu servidor local e abra o console do browser.
 */
@@ -18,6 +18,7 @@
 Utilize os espaços entre os comentários abaixo para executar os códigos dos exercícios. Inclusive este.
 */
 
+//console.log('Grandes poderes trazem grandes responsabilidades.')
 
 
 /*
@@ -29,7 +30,12 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Declare uma constante "myFavoriteTom" que recebe nome, espaço, e sobrenome do Tom que você mais gosta;
 - Exiba a "myFavoriteTom" no console do browser.
 */
+const tom = 'Tom'
+const firstTom = 'Hanks'
+const secondTom = 'Cruise'
+const myFavoriteTom = tom + ' ' + firstTom
 
+//console.log(myFavoriteTom)
 
 
 /*
@@ -40,8 +46,9 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - As letras não devem ser digitadas manualmente;
 - Exiba a "js" no console do browser;
 */
-
-
+const programmingLanguage = 'JavaScript'
+const js = programmingLanguage[0]+programmingLanguage[4]
+console.log(js)
 
 /*
 06 - Comente o console.log acima, e,
