@@ -1,8 +1,8 @@
 function logScope(){
-    let localVar = 2;
+    const localVar = 2;
 
     if(localVar){
-        let localVar = "Eu sou diferente!";
+        const localVar = "Eu sou diferente!";
         console.log("localVar aninhada: ", localVar);
     }
 
