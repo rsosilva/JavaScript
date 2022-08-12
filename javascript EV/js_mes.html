@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_mes.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+</head>
+
+<body>
+
+	<form name="formcalend" action="" method="post">
+		Digite o mês (1 a 12).: <input type="text" name="f_mes" size="4" maxlength="2">
+		<input type="button" name="btn_processar" value="Processar" onclick="verificames()">
+		<input type="reset" name="btn_cancelar" value="Cancelar"><p></p>
+
+		O mês correspondente é <input type="text" name="f_nomemes" size="18" maxlength="15">
+	</form>
+
+
+	<script languange="javascript">
+		<!--
+
+		/* objetivo: Utilizar o recurso switch para pesquisar o nome do mês */
+		
+		/* Definição de Variáveis */
+		var js_mes;  //numero do mes 
+				
+		/* Entrada de Dados */
+		//js_mes=parseInt(document.formcalend.f_mes.value);
+		
+		
+		function verificames() {
+			js_mes = parseInt(document.formcalend.f_mes.value);
+		    switch (js_mes) {
+				case 1 : document.formcalend.f_nomemes.value = 'Janeiro'; break;
+				case 2 : document.formcalend.f_nomemes.value = 'Fevereiro'; break;
+				case 3 : document.formcalend.f_nomemes.value = 'Marco'; break;
+				case 4 : document.formcalend.f_nomemes.value = 'Abril'; break;
+				case 5 : document.formcalend.f_nomemes.value = 'Maio'; break;
+				case 6 : document.formcalend.f_nomemes.value = 'Junho'; break;
+				case 7 : document.formcalend.f_nomemes.value = 'Julho'; break;
+				case 8 : document.formcalend.f_nomemes.value = 'Agosto'; break;
+				case 9 : document.formcalend.f_nomemes.value = 'Setembro'; break;
+				case 10 : document.formcalend.f_nomemes.value = 'Outubro'; break;
+				case 11 : document.formcalend.f_nomemes.value = 'Novembro'; break;
+				case 12 : document.formcalend.f_nomemes.value = 'Dezembro'; break;
+				default : document.formcalend.f_nomemes.value = '** Mês Inválido! **'; break;
+				} 	
+		}
+		
+		
+		/* Processamento dos dados */
+		
+		/*Saida de dados*/
+
+		
+		//-->
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_touppercase.htm - if</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+
+	<form name="formcurso" action="" method="post">
+		Digite seu Curso:<input type="text" name="f_cursodig" size="8" maxlength="4"> (SIST)<p></p>
+		<input type="button" name="btn_validar" value="Validar" onclick="cadcurso()">
+		<input type="reset" name="btn_cancelar" value="Cancelar"><p></p>
+		Código do Curso: <input type="text" name="f_codcurso" size="15" maxlength="10">
+	</form>
+	
+	<script language="Javascript">
+	<!--
+		var js_cursodig;
+		function cadcurso(){
+			js_cursodig = document.formcurso.f_cursodig.value;
+			if (js_cursodig.toLowerCase() == 'sist') {
+				document.formcurso.f_codcurso.value ='sist001/FB';
+			}
+			else{
+				window.alert('Curso Inválido');
+			}
+		}
+	//-->
+	</script>
+</body>
+</html>

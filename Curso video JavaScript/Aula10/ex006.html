@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        div#area{
+            font: normal 15pt arial;
+            background: green;
+            color: yellow;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        body {
+            background: rgb(68, 125,199);
+            color: white;
+            font: normal 14pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>   
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="area">Interaja...</div>
+    <script>
+        var x = 0  //variavel que guarda a qtd de cliques
+        var port  // variavel para corrigir o portugues no plural.
+        var p1 = window.document.getElementsByTagName('p')[0]    
+        window.document.write(p1.innerText)
+        var area_div = window.document.getElementById('area')
+        //fica escutando estes eventos para chamar a funcao.
+        area_div.addEventListener('click',clicar)
+        area_div.addEventListener('mouseenter',entrar)
+        area_div.addEventListener('mouseout',sair)
+        function clicar(){
+            x++
+            (x > 1 ? port = ' cliques.' : port = ' clique.' )
+            area_div.innerText = x + port
+            area_div.style.background = 'red'
+        }
+        function entrar(){
+            area_div.innerText = 'Entrou'
+        }
+        function sair(){
+            area_div.innerText = 'Saiu'
+            x=0
+            area_div.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
