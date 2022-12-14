@@ -25,7 +25,7 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos
 exercícios. Inclusive o alert mencionado acima.
 */
 
-// alert('JS is Awesome!')
+ alert('JS is Awesome!')
 
 /*
 04 - Comente o alert que você escreveu acima, utilizando o comentário de uma linha.
