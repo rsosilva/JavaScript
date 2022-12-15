@@ -10,7 +10,7 @@
 02 - Armazene um array vazio em uma let "brazilianFoods";
 */
 
-
+let brazilianFoods = []
 
 /*
 03 - Use o método adequado para adicionar os 3 seguintes itens ao array:
@@ -22,7 +22,10 @@
 - Exiba a brazilianFoods no console.
 */
 
-
+brazilianFoods.push('Coxinha')
+brazilianFoods.push('')
+brazilianFoods.push('Brigadeiro')
+//console.log(brazilianFoods)
 
 /*
 04 - Comente o console.log acima e:
@@ -32,8 +35,8 @@ array "brazilianFoods" (null) seja substituído por "Pão de Queijo";
 - Exiba apenas o 2º item desse array no console.
 */
 
-
-
+brazilianFoods[1] = 'Pão de Queijo'
+//console.log(brazilianFoods)
 /*
 05 - Comente o console.log acima e:
 
@@ -46,7 +49,9 @@ número diretamente;
 mas sem digitar os nomes das comidas diretamente;
 - Exiba a foodsInfo no console.
 */
-
+const foodsInfo = 'Até aqui, o array "brazilianFoods" possui ' + brazilianFoods.length + 
+    ' itens : ' + brazilianFoods
+//console.log(foodsInfo)
 
 
 /*
@@ -61,8 +66,11 @@ itens "Lilica" e "Matilda";
 - Exiba a "dogNames" no console.
 */
 
-
-
+const maleDogNames = ['Chico','Zeca']
+const femaleDogNames = ['Lilica','Matilda']
+let dogNames = maleDogNames.concat(femaleDogNames)
+//console.log(dogNames)
+//console.log(typeof dogNames)
 /*
 07 - Comente o console.log acima e:
 
@@ -72,7 +80,7 @@ itens "Lilica" e "Matilda";
 - O resultado deve ser: "nome1, nome2, nome3, nome4".
 */
 
-
+//console.log(dogNames.join(', '))
 
 /*
 08 - Comente o console.log acima e:
@@ -87,7 +95,7 @@ utilizando o método adequado para isso;
 agora é "Lilica".
 */
 
-
+console.log(dogNames[dogNames.length -1])
 
 /*
 09 - Comente o console.log acima e:
@@ -101,7 +109,8 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console.
 */
 
-
+dogNames.push('Nina')
+//console.log(dogNames)
 
 /*
 10 - Comente o console.log acima e:
