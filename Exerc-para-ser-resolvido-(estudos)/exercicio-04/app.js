@@ -13,6 +13,23 @@
   "Minhas 3 séries favoritas são: SÉRIE_01, SÉRIE_02 e SÉRIE_03."
 */
 
+const my3FavoriteTVShows = ['GOT','Walking Dead','Suits']
+const sentence = my3FavoriteTVShows.reduce(myFunction);
+
+//console.log(sentence)
+
+function myFunction(accumulator, value, index, array) {
+  
+  if (index == array.length-1) {
+    return accumulator + ' e ' + value
+  } 
+  else {
+    return accumulator + ', ' + value
+  }
+  
+}
+
+
 
 
 /*
@@ -22,7 +39,8 @@
     possui 3 itens.
 */
 
-
+const has3Itens = my3FavoriteTVShows.length == 3 ?  true : false
+//console.log(has3Itens)
 
 /*
   03 - Comente o console.log() acima e:
@@ -36,6 +54,10 @@
 
 const randomTVShow = 'Watchmen'
 
+const isRandomTVShowInclude = my3FavoriteTVShows.indexOf(randomTVShow) <  0 ? false : true
+console.log(isRandomTVShowInclude)
+
+
 /*
   04 - Comente o console.log() acima e:
 
@@ -47,7 +69,8 @@ const randomTVShow = 'Watchmen'
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
 
-
+const typeSentence = typeof(isRandomTVShowInclude)
+//console.log(typeSentence)
 
 /*
   05 - Comente o console.log() acima e:
@@ -63,7 +86,10 @@ const randomTVShow = 'Watchmen'
   caracteres? BOOLEAN."
 */
 
-
+const booleanToString = isRandomTVShowInclude.toString() 
+//const textToShow = 'A string que a typeSentence armazena tem mais de 39 caracteres? ' + booleanToString[0].toUpperCase() + booleanToString.substring(1)
+const textToShow = `A string que a typeSentence armazena tem mais de 39 caracteres? ${booleanToString[0].toUpperCase()}${booleanToString.substring(1)}`
+console.log(textToShow)
 
 /*
   06 - Comente o console.log() acima e:
