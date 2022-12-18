@@ -24,7 +24,7 @@ function myFunction(accumulator, value, index, array) {
     return accumulator + ' e ' + value
   } 
   else {
-    return accumulator + ', ' + value
+    return accumulator + ', ' + value 
   }
   
 }
