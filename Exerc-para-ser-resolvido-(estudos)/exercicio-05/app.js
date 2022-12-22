@@ -20,7 +20,11 @@
     4
     5
 */
-
+//let i = 0
+//while (i <= 5) {
+//  console.log(i)
+//  i++
+//}
 
 
 /*
@@ -28,7 +32,9 @@
 
   - Utilizando um for loop, faça o mesmo que foi pedido no exercício 01.
 */
-
+//for (i=0; i<= 5; i++) {
+//  console.log(i)
+//}
 
 
 /*
@@ -42,7 +48,8 @@
   "Esta é a Xª vez que esta frase é exibida no console."
 */
 
-
+//for (i=1; i<=10; i++)
+//  console.log("Esta é a " + i + "ª vez que esta frase é exibida no console.")
 
 /*
   04 - Comente o loop acima e:
@@ -54,7 +61,13 @@
   - Para ver se deu certo, exiba o upperCaseCities no console.
 */
 
-const cities = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais']
+const cities = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais','goiás']
+let upperCaseCities = []
+for (i=0;i<=cities.length-1;i++){
+  upperCaseCities.push(cities[i].toUpperCase())
+}
+//console.log(upperCaseCities)
+
 
 /*
   05 - Comente o console.log acima e:
