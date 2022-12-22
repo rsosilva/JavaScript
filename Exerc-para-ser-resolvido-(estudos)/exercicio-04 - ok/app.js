@@ -55,7 +55,7 @@ const has3Itens = my3FavoriteTVShows.length == 3 ?  true : false
 const randomTVShow = 'Watchmen'
 
 const isRandomTVShowInclude = my3FavoriteTVShows.indexOf(randomTVShow) <  0 ? false : true
-console.log(isRandomTVShowInclude)
+//console.log(isRandomTVShowInclude)
 
 
 /*
@@ -89,7 +89,7 @@ const typeSentence = typeof(isRandomTVShowInclude)
 const booleanToString = isRandomTVShowInclude.toString() 
 //const textToShow = 'A string que a typeSentence armazena tem mais de 39 caracteres? ' + booleanToString[0].toUpperCase() + booleanToString.substring(1)
 const textToShow = `A string que a typeSentence armazena tem mais de 39 caracteres? ${booleanToString[0].toUpperCase()}${booleanToString.substring(1)}`
-console.log(textToShow)
+//console.log(textToShow)
 
 /*
   06 - Comente o console.log() acima e:
@@ -111,16 +111,16 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Armazene em uma constante "crazyConversion" a conversão da "crazyOperation"  
     em boolean.
   - Você sabe por que essa conversão resultou em true? 
-  /*
+
   Se o valor é omitido ou é 0, -0, null, false, NaN, undefined ou é uma string vazia(""), 
   o objeto terá um valor inicial de false. Todos outros valores, incluindo qualquer objeto ou string "false", 
   criam um objeto com valor inicial true.
-  */
+
 */
 const crazyOperation = null + 1
-console.log('crazyOperation= ' + crazyOperation)
+//console.log('crazyOperation= ' + crazyOperation)
 const crazyConversion = Boolean(crazyOperation)
-console.log('crazyConversion= ' + crazyConversion)
+//console.log('crazyConversion= ' + crazyConversion)
 
 
 /*
@@ -135,6 +135,14 @@ console.log('crazyConversion= ' + crazyConversion)
   "A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação  
   é: BOOLEAN."
 */
+const ages = [31,82,61,11]
+const ageSum = ages.reduce((accumulator, currentValue, idx) => {
+  if (idx < 3) {
+    accumulator += currentValue
+  }
+  return accumulator
+})
+//console.log(ageSum)
 
 
 
@@ -147,7 +155,8 @@ console.log('crazyConversion= ' + crazyConversion)
   - Exiba a "isNotAString" no console.
 */
 
-
+const isNotAString = typeof(randomTVShow) !== 'string' ? true : false
+//console.log(isNotAString)
 
 /*
   10 - Comente o console.log() acima e:
@@ -158,3 +167,5 @@ console.log('crazyConversion= ' + crazyConversion)
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10]
+const achou8 = typeof(evenNumbers.find(element => element === 8)) == 'undefined' ? false : true
+console.log(achou8)
