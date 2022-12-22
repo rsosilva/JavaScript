@@ -90,6 +90,12 @@ const names = ['João Grilo', 'Chicó', 'Rosinha']
 */
 
 const numbers = ['91', '5', '30', '97', '83', '31']
+let somaArray = 0
+for (i=0;i < numbers.length; i++) 
+  somaArray += parseInt(numbers[i])
+
+//console.log(somaArray)
+//console.log(somaArray == 337 ? true : false)
 
 /*
   07 - Comente o console.log acima.
@@ -115,3 +121,16 @@ const arrays = [
   [8, 32, 16],
   [2, 8, 4]
 ]
+
+let SomaArray2 = 0
+//console.table(arrays, SomaArray2)
+for (i=0; i < arrays.length; i++) {
+  for (j=0; j < arrays[i].length; j++) {
+    //console.log(arrays[i][j])
+    SomaArray2 += arrays[i][j]
+  }
+}
+  
+console.log(SomaArray2)
+
+ 
