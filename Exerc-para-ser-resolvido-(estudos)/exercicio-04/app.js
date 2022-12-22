@@ -102,6 +102,7 @@ console.log(textToShow)
 */
 
 const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
+//console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${falsyValues[2]}.`)
 
 /*
   07 - Comente o console.log() acima e:
@@ -109,9 +110,17 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Armazene em uma constante "crazyOperation" a soma entre null e 1;
   - Armazene em uma constante "crazyConversion" a conversão da "crazyOperation"  
     em boolean.
-  - Você sabe por que essa conversão resultou em true?
+  - Você sabe por que essa conversão resultou em true? 
+  /*
+  Se o valor é omitido ou é 0, -0, null, false, NaN, undefined ou é uma string vazia(""), 
+  o objeto terá um valor inicial de false. Todos outros valores, incluindo qualquer objeto ou string "false", 
+  criam um objeto com valor inicial true.
+  */
 */
-
+const crazyOperation = null + 1
+console.log('crazyOperation= ' + crazyOperation)
+const crazyConversion = Boolean(crazyOperation)
+console.log('crazyConversion= ' + crazyConversion)
 
 
 /*
