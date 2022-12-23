@@ -24,6 +24,8 @@
 */
 
 const fruits = ['morango', 'banana', 'mamão']
+const isAbacaxiExist = fruits.includes('abacaxi')
+//console.log(isAbacaxiExist)
 
 /*
   02
@@ -37,6 +39,15 @@ const fruits = ['morango', 'banana', 'mamão']
   Obs.: tanto a expressão do lado esquerdo quanto a do lado direito do operador  
   lógico precisam ter a constante especificada. Exemplo: hour > x && hour < y.
 */
+const hour = '17'
+if (hour >= 6 && hour <=12 ) {
+  console.log('Bom Dia')
+} else if (hour >12 && hour <=18) {
+    //console.log('Boa Tarde')
+  } else {
+      console.log('Boa noite')
+    }
+
 
 /*
   03
@@ -51,6 +62,12 @@ const fruits = ['morango', 'banana', 'mamão']
   - Agora, teste diferentes idades para se certificar que a condição do `if`  
     também está funcionando.
 */
+const myAge = 48
+if (myAge <= 7 || myAge >= 65) {
+  console.log('Para você, a entrada é grátis!')
+} else {
+  //console.log('A entrada é R$ 30,00.')
+}
 
 /*
   04
@@ -62,6 +79,14 @@ const fruits = ['morango', 'banana', 'mamão']
 */
 
 const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
+const newArray = []
+for (i=0; i< numbers.length; i++) {
+  if (numbers[i] >= 11 && numbers[i] <= 90) {
+    newArray.push(numbers[i])
+  }
+}
+//console.log(newArray)
+
 
 /*
   05
@@ -77,6 +102,32 @@ const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
 */
 
 const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false]
+
+const numberOfBoolean = crazyArray.reduce((acc, item) => {
+  console.log(item, typeof(item))
+  if (typeof(item) == 'boolean') {
+    acc++
+  }
+  return acc
+},0)
+
+const numberOfInteger  = crazyArray.reduce((acc, item) => {
+  //console.log(item, typeof(item))
+  if (typeof(item) == 'number') {
+    acc++
+  }
+  return acc
+},0)
+
+const numberOfString = crazyArray.reduce((acc, item) => {
+  //console.log(item, typeof(item))
+  if (typeof(item) == 'string') {
+    acc++
+  }
+  return acc
+},0)
+
+console.log(`O crazyArray tem ${numberOfBoolean} booleans, ${numberOfInteger} números e ${numberOfString} strings.`)
 
 /*
   06
