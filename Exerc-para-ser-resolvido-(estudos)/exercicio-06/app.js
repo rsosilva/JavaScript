@@ -104,7 +104,6 @@ for (i=0; i< numbers.length; i++) {
 const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false]
 
 const numberOfBoolean = crazyArray.reduce((acc, item) => {
-  console.log(item, typeof(item))
   if (typeof(item) == 'boolean') {
     acc++
   }
@@ -127,7 +126,7 @@ const numberOfString = crazyArray.reduce((acc, item) => {
   return acc
 },0)
 
-console.log(`O crazyArray tem ${numberOfBoolean} booleans, ${numberOfInteger} números e ${numberOfString} strings.`)
+//console.log(`O crazyArray tem ${numberOfBoolean} booleans, ${numberOfInteger} números e ${numberOfString} strings.`)
 
 /*
   06
@@ -147,3 +146,9 @@ console.log(`O crazyArray tem ${numberOfBoolean} booleans, ${numberOfInteger} n�
 */
 
 const randomNumbers = [73, 4, 67, 10, 31, 58]
+const oddNumbers = []
+const pairNumbers = []
+for (i=1;i<randomNumbers.length; i++) {
+  randomNumbers[i] % 2 != 0 ? oddNumbers.push(randomNumbers[i]) : pairNumbers.push(randomNumbers[i])
+}
+//console.log(oddNumbers, pairNumbers)
