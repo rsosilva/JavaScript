@@ -6,7 +6,13 @@
   - Previna que esses parâmetros recebam undefined;
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
-
+const sumTwoValues = (value1 = 1, value2 = 1) => {
+  return value1 * value2  
+}
+//console.log(sumTwoValues(55,2))
+//console.log(sumTwoValues(null,2))
+//console.log(sumTwoValues('oi',2))
+//console.log(sumTwoValues(false,2))
 /*
   02
 
@@ -14,6 +20,18 @@
     **function expression** que retorne o resultado da **divisão** entre esses  
     2 números.
 */
+const divideTwoValues = (value1, value2) => {
+  if (typeof(value1) === 'number' && typeof(value2) === 'number') {
+    return value1 / value2  
+  } 
+  else {
+    return 'Informe apenas números.'
+  }
+}
+//console.log(divideTwoValues(55,2))
+//console.log(divideTwoValues(null,2))
+//console.log(divideTwoValues('oi',2))
+//console.log(divideTwoValues(false,2))
 
 /*
   03
@@ -27,7 +45,12 @@
 
   "Esta é a Xª vez que essa string é exibida."
 */
+const newFunction = (item = '') => {
+  console.log(item)
+}
 
+for (i = 1;i = 7; i++)
+  newFunction(`Esta é a ${i}ª vez que essa string é exibida.`)
 /*
   04
 
@@ -106,4 +129,4 @@ let phrase = ''
 for(i=0;i<functions.length;i++) {
   phrase += functions[i]() + ' '
 }
-console.log(phrase)
+//console.log(phrase)
