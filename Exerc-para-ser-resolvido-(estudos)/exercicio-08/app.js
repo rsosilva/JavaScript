@@ -102,3 +102,8 @@ const functions = [
   function () { return 'Índias' },
   function () { return 'Ocidentais.' }
 ]
+let phrase = ''
+for(i=0;i<functions.length;i++) {
+  phrase += functions[i]() + ' '
+}
+console.log(phrase)
