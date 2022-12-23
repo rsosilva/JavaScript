@@ -46,13 +46,13 @@ const divideTwoValues = (value1, value2) => {
   "Esta é a Xª vez que essa string é exibida."
 */
 const newFunction = (item = '') => {
-  console.log(item)
+//  console.log(item)
 }
 
-for (i = 1; i >= 7; i++) {
-  //newFunction(`Esta é a ${i}ª vez que essa string é exibida.`)
-  console.log(`Esta é a ${i}ª vez que essa string é exibida.`)
+for (i = 1; i <= 7; i++) {
+  newFunction(`Esta é a ${i}ª vez que essa string é exibida.`)
 }
+
 
 /*
   04
@@ -66,6 +66,11 @@ for (i = 1; i >= 7; i++) {
 */
 
 const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influencer', 'crush', 'fitness', 'hater', 'bae', 'random', 'kawaii', 'outfit', 'mood', 'fail']
+const millennialWordsInUpperCase = millennialWords.map((item) => {
+   return item.toUpperCase()
+})
+//console.log(millennialWordsInUpperCase)
+
 
 /*
   05
