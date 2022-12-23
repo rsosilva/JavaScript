@@ -84,6 +84,16 @@ const millennialWordsInUpperCase = millennialWords.map((item) => {
 */
 
 const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
+let totalPositive = 0
+let totalNegative = 0
+const isPositiveNumber = (number) => {
+  return number >=0 ? 1 : 0
+}
+
+for (i=0;i<randomNumbers.length;i++){
+   isPositiveNumber(randomNumbers[i]) == 1 ? totalPositive++ : totalNegative++
+}
+console.log(totalPositive,totalNegative)
 
 /*
   06
