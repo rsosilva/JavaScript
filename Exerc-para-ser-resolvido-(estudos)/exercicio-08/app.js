@@ -49,8 +49,11 @@ const newFunction = (item = '') => {
   console.log(item)
 }
 
-for (i = 1;i = 7; i++)
-  newFunction(`Esta é a ${i}ª vez que essa string é exibida.`)
+for (i = 1; i >= 7; i++) {
+  //newFunction(`Esta é a ${i}ª vez que essa string é exibida.`)
+  console.log(`Esta é a ${i}ª vez que essa string é exibida.`)
+}
+
 /*
   04
 
