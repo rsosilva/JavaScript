@@ -93,7 +93,8 @@ const isPositiveNumber = (number) => {
 for (i=0;i<randomNumbers.length;i++){
    isPositiveNumber(randomNumbers[i]) == 1 ? totalPositive++ : totalNegative++
 }
-//console.log(totalPositive,totalNegative)
+console.log(randomNumbers)
+console.log(totalPositive,totalNegative)
 
 /*
   06
@@ -109,7 +110,7 @@ const getOddNumbers = (array) => {
   return newArray
 }
 
-console.log(getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42]))
+//console.log(getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42]))
 
 /*
   07
