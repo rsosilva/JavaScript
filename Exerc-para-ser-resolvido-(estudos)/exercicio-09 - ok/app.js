@@ -196,7 +196,7 @@ review.forEach((item) => {
 })
 
 section.innerHTML = paragraphs
-console.log (paragraphs)
+//console.log (paragraphs)
 /*
   14
 
@@ -217,3 +217,24 @@ console.log (paragraphs)
     pelo restante da quantidade de pessoas que curtiram o post (além das duas  
     pessoas já mencionadas no início da mensagem).
 */
+
+const totalLikes = (arrayNames) => {
+  let nm = ''
+  let message = ''
+  switch (arrayNames.length) {
+    case 0 : 
+      message = 'Ninguém curtiu isso'
+      break
+    case 1 : 
+      message = `${arrayNames[0]} curtiu isso`
+      break
+    default :
+      arrayNames.forEach((item) => {
+        nm = item + ', ' + nm 
+      })
+      message = nm + 'curtiram isso'
+  }
+  console.log(message)
+}
+
+totalLikes(['jo','re'])
