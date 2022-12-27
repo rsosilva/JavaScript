@@ -13,16 +13,21 @@
     valor no console.
 */
 
-function convertToString (value) {
+convertToString = (value) => {
   return String(value)
 }
-
+//console.log(convertToString(123456))
 /*
   02
 
   - Crie uma função que retorne a quantidade de caracteres que uma string  
     recebida por parâmetro possui.
 */
+countString = (paramValue) => {
+  return paramValue.length
+}
+
+//console.log(countString('renato soares e silva'))
 
 /*
   03
@@ -33,6 +38,10 @@ function convertToString (value) {
 
   "CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO"
 */
+convertToLowerCase = (paramValue) => {
+  return paramValue.toLowerCase()
+}
+//console.log(convertToLowerCase('CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO'))
 
 /*
   04
@@ -40,13 +49,23 @@ function convertToString (value) {
   - Crie uma função que recebe 2 parâmetros: um caractere e uma string;
   - Ao ser invocada, a função deve retornar o index do caractere na string.
 */
-
+findCharacter = (phr, char) => {
+  return phr.indexOf(char)
+}
+const phrase = 'renato soares' 
+const character = 'a'
+//console.log(findCharacter(phrase, character))
 /*
   05
 
   - Crie uma função que, ao ser invocada, retorna um boolean indicando se o item  
     passado por argumento existe no array (também passado por argumento).
 */
+const foundOnArray = (item, array) => {
+  return array.includes(item) 
+}
+//console.log(foundOnArray(7, [1,2,3,4,5,6]))
+
 
 /*
   06
@@ -54,7 +73,10 @@ function convertToString (value) {
   - Crie uma função que retorna a concatenação de 2 arrays, passados como  
     argumentos em sua invocação;
 */
-
+combineTwoArrays = (array1, array2) => {
+  return array1.concat(array2)
+}
+//console.log(combineTwoArrays([1,2,3],[5,6,7]))
 /*
   07
 
@@ -62,13 +84,25 @@ function convertToString (value) {
     mas com o último item removido.
 */
 
+removeLastItemFromArray = (array) => {
+  array.pop() 
+  
+  return array
+}
+//console.log(removeLastItemFromArray([1,2,3,4,5]))
+
+
 /*
   08
 
   - Crie uma função que retorna se o valor passado como argumento em sua  
     invocação é null.
 */
+  checkIfIsNull = (param) => {
+    return typeof(param) === null ? 'é null' : 'não é null'
+  }
 
+   //console.log(checkIfIsNull('oi'))
 /*
   09
 
@@ -79,6 +113,8 @@ function convertToString (value) {
     argumento a função que exibe seu nome no console e veja se o nome realmente  
     foi exibido.
 */
+
+    //não entendi
 
 /*
   10
@@ -101,6 +137,9 @@ function convertToString (value) {
 */
 
 const numbers = [1, 2, 3]
+numbers.forEach((item, index) =>{
+  //console.log(`O ${index+1}º item do array ${numbers} é ${item}.`)
+}) 
 
 /*
   12
@@ -113,9 +152,16 @@ const numbers = [1, 2, 3]
 const letters = ['v', 'e', 'p']
 let lettersCopy = []
 
-for (let i = 0; i < letters.length; i++) {
-  lettersCopy.push(letters[i])
-}
+letters.forEach((item) => {
+  lettersCopy.push(item)
+  
+})
+
+//console.log(lettersCopy)
+
+//for (let i = 0; i < letters.length; i++) {
+//  lettersCopy.push(letters[i])
+//}
 
 /*
   13
@@ -145,9 +191,12 @@ const review = [
 ]
 
 let paragraphs = ''
+review.forEach((item) => {
+  paragraphs = paragraphs + '<p>' + item + '</p>'
+})
 
 section.innerHTML = paragraphs
-
+console.log (paragraphs)
 /*
   14
 
