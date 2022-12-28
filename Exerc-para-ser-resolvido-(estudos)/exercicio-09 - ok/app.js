@@ -14,8 +14,8 @@
 */
 
 convertToString = (value) => {
-  return String(value)
-}
+  return String(value);
+};
 //console.log(convertToString(123456))
 /*
   02
@@ -24,8 +24,8 @@ convertToString = (value) => {
     recebida por parâmetro possui.
 */
 countString = (paramValue) => {
-  return paramValue.length
-}
+  return paramValue.length;
+};
 
 //console.log(countString('renato soares e silva'))
 
@@ -39,8 +39,8 @@ countString = (paramValue) => {
   "CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO"
 */
 convertToLowerCase = (paramValue) => {
-  return paramValue.toLowerCase()
-}
+  return paramValue.toLowerCase();
+};
 //console.log(convertToLowerCase('CHOCOTONE E OVO DE PÁSCOA JUNTOS NO MERCADO EM PLENO FEVEREIRO'))
 
 /*
@@ -50,10 +50,10 @@ convertToLowerCase = (paramValue) => {
   - Ao ser invocada, a função deve retornar o index do caractere na string.
 */
 findCharacter = (phr, char) => {
-  return phr.indexOf(char)
-}
-const phrase = 'renato soares' 
-const character = 'a'
+  return phr.indexOf(char);
+};
+const phrase = "renato soares";
+const character = "a";
 //console.log(findCharacter(phrase, character))
 /*
   05
@@ -62,10 +62,9 @@ const character = 'a'
     passado por argumento existe no array (também passado por argumento).
 */
 const foundOnArray = (item, array) => {
-  return array.includes(item) 
-}
+  return array.includes(item);
+};
 //console.log(foundOnArray(7, [1,2,3,4,5,6]))
-
 
 /*
   06
@@ -74,8 +73,8 @@ const foundOnArray = (item, array) => {
     argumentos em sua invocação;
 */
 combineTwoArrays = (array1, array2) => {
-  return array1.concat(array2)
-}
+  return array1.concat(array2);
+};
 //console.log(combineTwoArrays([1,2,3],[5,6,7]))
 /*
   07
@@ -85,12 +84,11 @@ combineTwoArrays = (array1, array2) => {
 */
 
 removeLastItemFromArray = (array) => {
-  array.pop() 
-  
-  return array
-}
-//console.log(removeLastItemFromArray([1,2,3,4,5]))
+  array.pop();
 
+  return array;
+};
+//console.log(removeLastItemFromArray([1,2,3,4,5]))
 
 /*
   08
@@ -98,11 +96,11 @@ removeLastItemFromArray = (array) => {
   - Crie uma função que retorna se o valor passado como argumento em sua  
     invocação é null.
 */
-  checkIfIsNull = (param) => {
-    return typeof(param) === null ? 'é null' : 'não é null'
-  }
+checkIfIsNull = (param) => {
+  return typeof param === null ? "é null" : "não é null";
+};
 
-   //console.log(checkIfIsNull('oi'))
+//console.log(checkIfIsNull('oi'))
 /*
   09
 
@@ -114,7 +112,7 @@ removeLastItemFromArray = (array) => {
     foi exibido.
 */
 
-    //não entendi
+//não entendi
 
 /*
   10
@@ -136,10 +134,10 @@ removeLastItemFromArray = (array) => {
   "O Xº item do array [X, X, X] é X."
 */
 
-const numbers = [1, 2, 3]
-numbers.forEach((item, index) =>{
+const numbers = [1, 2, 3];
+numbers.forEach((item, index) => {
   //console.log(`O ${index+1}º item do array ${numbers} é ${item}.`)
-}) 
+});
 
 /*
   12
@@ -149,13 +147,12 @@ numbers.forEach((item, index) =>{
     criada.
 */
 
-const letters = ['v', 'e', 'p']
-let lettersCopy = []
+const letters = ["v", "e", "p"];
+let lettersCopy = [];
 
 letters.forEach((item) => {
-  lettersCopy.push(item)
-  
-})
+  lettersCopy.push(item);
+});
 
 //console.log(lettersCopy)
 
@@ -181,21 +178,21 @@ letters.forEach((item) => {
   </article>
 */
 
-const section = document.querySelector('[data-js="section"]')
+const section = document.querySelector('[data-js="section"]');
 
 const review = [
-  'Eu sempre adorei o filme e quando descobri que tinha o livro também fiquei doido. Demorei um pouco mas acabei comprando e finalmente li \o/.',
-  'O primeiro filme foi baseado nesse livro, porém o livro (como sempre) é muito mais completo, com mais personagens, mais acontecimentos e até mesmo mais dinossauros. Na verdade nesse livro tem coisas do segundo e terceiro filme também, eles mudaram bastante nos filmes, acho que pra ficar mais comercial, e se o filme é bom, o livro é 100 vezes melhor.',
-  'Michael é um ótimo autor, esse sim pesquisa muito antes de escrever um livro, além da história que já prende sua atenção, ele fala bastante de genética (pra explicar como os dinossauros foram criados) e acaba falando um pouco de programação (informática), por causa dos programas avançados e modernos que o parque tinha. E isso foi uma das coisas que eu achei muito legal, ele explica as coisas com gráficos, tabelas, códigos ... enfim, o cara é foda hahaha.',
-  'Recomendo esse livro pra quem curte uma boa história de ficção. Apesar de muita gente pensar que o livro não tem graça, porque o legal mesmo é ver o dinossauro no filme, com todos os efeitos especiais, eu digo pra deixar esse pensamento de lado, pois a história é tão bem contada e os detalhes são tão bem relatados, que você passa a fazer parte da história, e vive todas as emoções hahaha.'
-]
+  "Eu sempre adorei o filme e quando descobri que tinha o livro também fiquei doido. Demorei um pouco mas acabei comprando e finalmente li o/.",
+  "O primeiro filme foi baseado nesse livro, porém o livro (como sempre) é muito mais completo, com mais personagens, mais acontecimentos e até mesmo mais dinossauros. Na verdade nesse livro tem coisas do segundo e terceiro filme também, eles mudaram bastante nos filmes, acho que pra ficar mais comercial, e se o filme é bom, o livro é 100 vezes melhor.",
+  "Michael é um ótimo autor, esse sim pesquisa muito antes de escrever um livro, além da história que já prende sua atenção, ele fala bastante de genética (pra explicar como os dinossauros foram criados) e acaba falando um pouco de programação (informática), por causa dos programas avançados e modernos que o parque tinha. E isso foi uma das coisas que eu achei muito legal, ele explica as coisas com gráficos, tabelas, códigos ... enfim, o cara é foda hahaha.",
+  "Recomendo esse livro pra quem curte uma boa história de ficção. Apesar de muita gente pensar que o livro não tem graça, porque o legal mesmo é ver o dinossauro no filme, com todos os efeitos especiais, eu digo pra deixar esse pensamento de lado, pois a história é tão bem contada e os detalhes são tão bem relatados, que você passa a fazer parte da história, e vive todas as emoções hahaha.",
+];
 
-let paragraphs = ''
+let paragraphs = "";
 review.forEach((item) => {
-  paragraphs = paragraphs + '<p>' + item + '</p>'
-})
+  paragraphs = paragraphs + "<p>" + item + "</p>";
+});
 
-section.innerHTML = paragraphs
+section.innerHTML = paragraphs;
 //console.log (paragraphs)
 /*
   14
@@ -219,22 +216,22 @@ section.innerHTML = paragraphs
 */
 
 const totalLikes = (arrayNames) => {
-  let nm = ''
-  let message = ''
+  let nm = "";
+  let message = "";
   switch (arrayNames.length) {
-    case 0 : 
-      message = 'Ninguém curtiu isso'
-      break
-    case 1 : 
-      message = `${arrayNames[0]} curtiu isso`
-      break
-    default :
+    case 0:
+      message = "Ninguém curtiu isso";
+      break;
+    case 1:
+      message = `${arrayNames[0]} curtiu isso`;
+      break;
+    default:
       arrayNames.forEach((item) => {
-        nm = item + ', ' + nm 
-      })
-      message = nm + 'curtiram isso'
+        nm = item + ", " + nm;
+      });
+      message = nm + "curtiram isso";
   }
-  console.log(message)
-}
+  console.log(message);
+};
 
-totalLikes(['jo','re'])
+totalLikes(["jo", "re"]);
