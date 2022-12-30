@@ -29,6 +29,29 @@
         o plano free. Seus dados de cartão de crédito não serão solicitados.
 */
 const currencyOneEl = document.querySelector('[data-js="currency-one"]')
-const currencyTwoEl = document.querySelector('[data-js="currency-one"]')
+const currencyTwoEl = document.querySelector('[data-js="currency-two"]')
 
--= document.querySelector('[data-js="currency-one"]')
+const urlAPI = 'https://v6.exchangerate-api.com/v6/8951f20dc8cf2bfee654319c/latest/kkk'
+  
+const getErrormessage = errorType => ({
+  'unsupported-code': 'A moeda não existe em nosso banco de dados.',
+  'malformed-request': 'A url da API está incorreta.',
+  'invalid-key' : 'Chave de acesso inválida.',
+  'inactive-account' : 'Conta inativa no serviço API',
+  'quota-reached' : 'Limite de consulta da conta atingido'
+})[errorType]
+
+const fetchExchangeRate = async () => {
+  try {
+    const response = await fetch(urlAPI)
+    const exchangeRateData = await response.json()
+
+    if (exchangeRateData.result === 'error') {
+      throw new Error(getErrormessage(exchangeRateData['error-type']))
+    }
+  } catch (err) {
+    alert(err.message)
+  }
+}
+
+fetchExchangeRate()
